@@ -30,7 +30,7 @@ const displayTherapists = () => {
   therapists.forEach(therapist => {
     allTherapistsSection.innerHTML +=
     `<article class='therapist-card'>
-      <p>${therapist.lname}, ${therapist.fname}</p>
+      <p class='therapist-name'>${therapist.lname}, ${therapist.fname}</p>
     </article>`
   })
 }

@@ -10,16 +10,24 @@ body, html {
 .all-therapists-section {
   height: 30%;
   min-height: 200px;
-  width: 50%;
+  width: 40%;
   min-width: 250px;
   background-color: #FFFFFF;
   box-shadow: rgb(180, 180, 180) 2px 2px 7px 2px;
 }
 
 .therapist-card {
-  margin: 10px 5px
+  margin: 10px 5px;
+  /* border: 1px black solid */
+}
+
+.therapist-name {
+  display: flex;
+  align-items: center;
+  height: 35px;
+  margin: 0;
 }
 
 .therapist-card:hover {
-  background-color: grey;
+  background-color: #CCCCCC;
 }
