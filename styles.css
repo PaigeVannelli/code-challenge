@@ -13,9 +13,13 @@ body, html {
   width: 50%;
   min-width: 250px;
   background-color: #FFFFFF;
-  box-shadow: rgb(199, 198, 198) 0px 1px 7px 1px;
+  box-shadow: rgb(180, 180, 180) 2px 2px 7px 2px;
 }
 
 .therapist-card {
   margin: 10px 5px
+}
+
+.therapist-card:hover {
+  background-color: grey;
 }
