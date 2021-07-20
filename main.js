@@ -25,10 +25,20 @@ const capitalizeNames = () => {
  return therapistsNames
 }
 
+const displayTherapists = () => {
+  const allTherapistsSection = document.getElementById('all-therapists-section')
+  allTherapistsSection.innerHTML = ''
+  therapists.forEach(therapist => {
+    allTherapistsSection += 
+    `<article class='therapist-card'>
+      <p>${therapist.lname}, ${therapist.fname}</p>
+    </article>`
+  })
+}
 
 const loadTherapists = () => {
   const formattedTherapists = capitalizeNames()
-  console.log(formattedTherapists)
+  displayTherapists(formattedTherapists)
 }
 
 window.addEventListener('load', loadTherapists)
