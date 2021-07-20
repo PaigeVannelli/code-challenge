@@ -1,4 +1,4 @@
-const data = `[{"fname":"esme", "lname":"sanchez", "id":1892038, "isTherapist":true},
+const therapistsData = `[{"fname":"esme", "lname":"sanchez", "id":1892038, "isTherapist":true},
 
 {"fname":"rick", "lname":"jeps", "id":1894024, "isTherapist":false},
 
@@ -7,4 +7,3 @@ const data = `[{"fname":"esme", "lname":"sanchez", "id":1892038, "isTherapist":t
 {"fname":"renat", "lname":"gros", "id":1894039, "isTherapist":true},
 
 {"fname":"bettino", "lname":"yang", "id":3789204, "isTherapist":true}]`
-
