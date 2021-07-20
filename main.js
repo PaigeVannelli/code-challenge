@@ -9,25 +9,29 @@ const therapistsData = `[{"fname":"esme", "lname":"sanchez", "id":1892038, "isTh
 
 {"fname":"bettino", "lname":"yang", "id":3789204, "isTherapist":true}]`
 
-// window.addEventListener('load', loadTherapists)
 
 const therapists = JSON.parse(therapistsData)
 
+const capitalizeFirstLetter = (name) => {
+  return name.charAt(0).toUpperCase() + name.slice(1)
+}
 
 const capitalizeNames = () => {
   const therapistsNames = therapists.map(therapist => {
-   return therapist.fname.charAt(0).toUpperCase() + therapist.fname.slice(1)
- })
+    therapist.fname = capitalizeFirstLetter(therapist.fname)
+    therapist.lname = capitalizeFirstLetter(therapist.lname)
+    return therapist
+  })
  return therapistsNames
 }
+
 
 const loadTherapists = () => {
   const formattedTherapists = capitalizeNames()
   console.log(formattedTherapists)
 }
 
-loadTherapists()
-
+window.addEventListener('load', loadTherapists)
 
 // In order to evaluate some of your skills that will be necessary for this position, 
 // please complete the coding assignment below. Please only use pure JavaScript (no jQuery, react, or similar libraries/frameworks).
