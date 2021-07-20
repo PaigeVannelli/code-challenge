@@ -27,9 +27,8 @@ const capitalizeNames = () => {
 
 const displayTherapists = () => {
   const allTherapistsSection = document.getElementById('all-therapists-section')
-  allTherapistsSection.innerHTML = ''
   therapists.forEach(therapist => {
-    allTherapistsSection += 
+    allTherapistsSection.innerHTML +=
     `<article class='therapist-card'>
       <p>${therapist.lname}, ${therapist.fname}</p>
     </article>`
