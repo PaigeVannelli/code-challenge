@@ -1,4 +1,4 @@
 # code-challenge
 
-View deployed site here: 
+View deployed site here: https://paigevannelli.github.io/code-challenge/
 
