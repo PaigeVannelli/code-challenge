@@ -1,5 +1,5 @@
 
-const data = `[{"fname":"esme", "lname":"sanchez", "id":1892038, "isTherapist":true},
+const therapistsData = `[{"fname":"esme", "lname":"sanchez", "id":1892038, "isTherapist":true},
 
 {"fname":"rick", "lname":"jeps", "id":1894024, "isTherapist":false},
 
@@ -9,10 +9,24 @@ const data = `[{"fname":"esme", "lname":"sanchez", "id":1892038, "isTherapist":t
 
 {"fname":"bettino", "lname":"yang", "id":3789204, "isTherapist":true}]`
 
+// window.addEventListener('load', loadTherapists)
 
-const users = JSON.parse(data)
+const therapists = JSON.parse(therapistsData)
 
-console.log(users)
+
+const capitalizeNames = () => {
+  const therapistsNames = therapists.map(therapist => {
+   return therapist.fname.charAt(0).toUpperCase() + therapist.fname.slice(1)
+ })
+ return therapistsNames
+}
+
+const loadTherapists = () => {
+  const formattedTherapists = capitalizeNames()
+  console.log(formattedTherapists)
+}
+
+loadTherapists()
 
 
 // In order to evaluate some of your skills that will be necessary for this position, 
